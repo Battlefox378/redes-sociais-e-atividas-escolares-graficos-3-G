@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --bg-color: #2B2D42;
+    --primary-color: #EDF2F4;
+    --accent-color: #EF233C;
+    --secondary-color: #8D99AE;
+    --font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: var(--bg-color);
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+nav a {
+    color: var(--bg-color);
+    margin: 0 1.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+    transition: color 0.2s;
+}
+
+.graficos-section {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.graficos-container {
+    padding: 40px;
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    width: 80%;
+    max-width: 1000px;
+}
+
+.grafico {
+    margin: 20px 0;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+}
